@@ -27,6 +27,7 @@ public static void main(String[] args) {
 	wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[text()='qaclickacademy.com']")));
 	
 	System.out.println(driver.findElement(By.xpath("//div[text()='qaclickacademy.com']")).getText());
+	driver.close(); // close child window
 	
 	//Table Handling
 	driver.switchTo().window(parentWindow); // again switch to parent window

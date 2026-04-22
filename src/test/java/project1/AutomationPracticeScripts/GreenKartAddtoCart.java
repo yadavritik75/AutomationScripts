@@ -16,6 +16,7 @@ public class GreenKartAddtoCart {
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://rahulshettyacademy.com/seleniumPractise/");
+		System.out.println(driver.getTitle());
 		driver.manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(5));
 		List<WebElement> products = driver.findElements(By.cssSelector("h4.product-name"));
 		List<String> itemsNeeded = Arrays.asList(producNames);

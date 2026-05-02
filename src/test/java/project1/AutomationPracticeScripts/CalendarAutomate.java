@@ -38,6 +38,7 @@ public class CalendarAutomate {
 		String actualText=confirmationText.getText();
 		System.out.println(actualText);
 		Assert.assertEquals("Thank you for your response.", actualText.trim());
+		
 
 	}
 
